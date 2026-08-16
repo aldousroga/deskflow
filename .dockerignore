@@ -1,0 +1,10 @@
+# Keeps the Docker build fast and the image clean - none of this is needed to run the app.
+**/bin/
+**/obj/
+screenshots/
+__pycache__/
+*.pyc
+mock_server.py
+*_check.py
+*.sql
+README.md
