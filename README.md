@@ -25,7 +25,17 @@ deskflow/
         └── app.html                 <- the app shell (sidebar + Users, Assets, Tickets, Dashboard,
                                          Technicians, Reports, Settings)
 ```
-
+<img width="3416" height="1295" alt="DF_Tickets_Module" src="https://github.com/user-attachments/assets/47db346a-0f1a-488c-86e4-0bc827877741" />
+<img width="3117" height="892" alt="DF_Technicians_module" src="https://github.com/user-attachments/assets/85184c67-f9fa-43dc-8b99-f4ccd7578366" />
+<img width="3399" height="1285" alt="DF_Reports_module" src="https://github.com/user-attachments/assets/40df3ccd-9e39-40ee-80dc-f97484d97e62" />
+<img width="1668" height="1250" alt="DF_Login_panel" src="https://github.com/user-attachments/assets/61aed02c-444a-45ec-a6bf-afb9d756da01" />
+<img width="558" height="1164" alt="DF_edit_asset" src="https://github.com/user-attachments/assets/90907283-0e20-41c6-9f12-0a0cde625f51" />
+<img width="592" height="811" alt="DF_edit User" src="https://github.com/user-attachments/assets/7c4f450e-6af7-476a-b7c8-5a257fdc5fb5" />
+<img width="3430" height="1301" alt="DF_dashboard" src="https://github.com/user-attachments/assets/9d262c83-6721-49ec-8d69-278bfdea8a9a" />
+<img width="1317" height="1294" alt="DF_custom_setting" src="https://github.com/user-attachments/assets/c27ddc2a-9ad8-4486-aa37-d9b46106ccce" />
+<img width="3437" height="1295" alt="DF_Assets_module" src="https://github.com/user-attachments/assets/efb12758-ead2-46a8-81e1-86abae523e62" />
+<img width="861" height="757" alt="DF_Add_ticket" src="https://github.com/user-attachments/assets/f99df4ee-4d2d-4f06-ac9d-09b3beebeb46" />
+<img width="3420" height="663" alt="DF_User_module" src="https://github.com/user-attachments/assets/609a5c11-5df0-4593-92eb-0d838aeb5779" />
 ## 1. Create the database tables
 
 You already created the `deskflow` database in Workbench. Run these in order (make sure
@@ -316,17 +326,5 @@ Two small updates once the app has a real public URL:
   string) with your real values — this turns the feature on for the live site the same way
   editing `appsettings.json` turns it on locally.
 
-## Where to go next
 
-- **Notifications** — in-system delivery (a bell/feed wired to ticket lifecycle events like
-  assignment, new comments, and SLA breaches) is buildable now. Actually sending email/SMS/Teams/
-  Slack needs real credentials from you when we get there — Settings → Email Configuration already
-  has a place to store them.
-- **Business Hours / Holidays applied to SLA math** — right now they're stored but SLA due dates
-  don't pause outside business hours or skip holidays yet; wiring that in changes the due-date
-  calculation in `Program.cs`, so it's its own slice of work.
-- **Attachments/screenshots** on tickets — deliberately deferred, since file uploads need their
-  own design work (storage location, size limits, allowed file types).
-- **Asset Depreciation** report — needs a purchase-cost field on `assets` that doesn't exist yet.
 
-Say the word whenever you're ready for the next slice.
